@@ -19,6 +19,7 @@ const jsFiles = [
     './static/lib/js/ScrollTrigger.min.js',
     './static/lib/js/jquery.formstyler.min.js',
     './static/lib/js/jquery-ui.min.js',
+    './static/lib/js/jquery.ui.touch-punch.min.js',
     './static/lib/js/jquery.scrollbar.min.js',
     './blocks/**/*.js'
 ]
