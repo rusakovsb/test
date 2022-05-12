@@ -3,7 +3,7 @@ $(function() {
     $(".mobile-nav-toggle").click(function() { 
         var hideNav = function () {
             $(".main-menu").removeClass("main-menu_visible");
-            $(".overlay").fadeOut(100) 
+            $(".overlay").fadeOut(200) 
         };
         if(!$(this).hasClass("mobile-nav-toggle_active")) {  
             $(this).addClass("mobile-nav-toggle_active");
