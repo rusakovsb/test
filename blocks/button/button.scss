@@ -1,0 +1,73 @@
+@import '../../mixins/mixins.scss';
+
+.button {
+    display: inline-block; 
+    padding: 0;         
+    text-decoration: none;
+    text-transform: uppercase; 
+    text-align: center;
+    font-family: 'Lato';    
+    font-weight: 400;
+    border-radius: 0.25rem; 
+    cursor: pointer;
+    transition: background 0.2s linear;
+
+    &_blue {
+        background: #3e9cdc;
+        color: #fff;
+        border: 1px solid #fff;
+        
+        &:hover {
+            background: #4aacee;
+        }
+
+    }
+
+    &_white {
+        background: #fff;
+        color: #2a2b30;
+        border: 1px solid #6f6d7b;
+
+        &:hover {
+            background: #f0f0f0;
+        }
+
+    }
+
+    &_margin-right {
+        margin-right: 2rem;
+
+        @include md { 
+            margin-right: 1rem;
+        }
+
+    }
+
+    &_small { 
+        width: 11.25rem;
+        line-height: 2.75rem;
+        font-size: 0.813rem;
+
+        @include md { 
+            width: 9rem;
+            line-height: 2.25rem;
+        }
+
+    }
+
+    &_large {
+        line-height: 3rem;
+        width: calc(33.333% - 1.5rem);
+        font-size: 0.938rem;
+
+        @include sm { 
+            width: 100%;
+        }
+
+    }
+
+    &:focus {   
+        outline: none;
+    }
+
+}

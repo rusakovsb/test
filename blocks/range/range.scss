@@ -1,0 +1,114 @@
+.range {    
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @include sm { 
+            margin: 0 0 1rem 0;
+        }
+
+    }
+
+    &__label {
+        font-family: 'Lato';
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    &__control {
+        padding: 0;
+        background: transparent;
+        border: none;
+        font-family: 'Lato';
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-align: right;
+        color: #fff;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+    @include sm { 
+        margin: 0 0 1.5rem 0;
+    }
+
+}
+
+.ui-slider .ui-slider-handle {
+    width: 1.5rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+.ui-widget.ui-widget-content {
+    box-sizing: border-box;
+    border: 0.063rem solid #fff;
+}
+
+.ui-slider-horizontal {
+    height: 0.375rem;
+    background: #bebec1;
+}
+
+.ui-widget-header {    
+    background: #bebec1;
+}
+
+.ui-corner-all, 
+.ui-corner-bottom, 
+.ui-corner-br, 
+.ui-corner-right {
+    border-bottom-right-radius: 1rem;
+}
+
+.ui-corner-all, 
+.ui-corner-bl, 
+.ui-corner-bottom, 
+.ui-corner-left {
+    border-bottom-left-radius: 1rem;
+}
+
+.ui-corner-all, 
+.ui-corner-right, 
+.ui-corner-top, 
+.ui-corner-tr {
+    border-top-right-radius: 1rem;
+}
+
+.ui-corner-all, 
+.ui-corner-left, 
+.ui-corner-tl, 
+.ui-corner-top {
+    border-top-left-radius: 1rem;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.625rem;
+    margin-left: -0.75rem;
+}
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default {
+    background: #42a9ed;
+    border: 0.188rem solid #286690;
+}
+
+.ui-widget-content .ui-state-active {
+    background: #58b6f5;
+    border: 0.188rem solid #286690;
+}

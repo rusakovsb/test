@@ -1,0 +1,89 @@
+.main-menu {
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+
+        @include sm { 
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    }
+
+    &__item {
+        margin: 0 0 0 2.865vw;
+
+        @include sm { 
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.813rem;
+        font-weight: 600;
+        color: #fff;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: #90cff9;
+        }
+
+        &:focus {   
+            outline: none;
+        }
+
+        &_active {
+            color: #43abf0;
+        }
+
+        @include md { 
+            font-size: 0.688rem;
+        }
+
+        @include sm { 
+            padding: 0.5em 0;
+            font-size: 1.5rem;
+        }
+
+        @include xs { 
+            padding: 0.5em 0;
+            font-size: 1.25rem;
+        }
+
+    }
+
+    @include sm {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 5rem 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        transition: opacity 0.25s ease-out;
+    }
+
+    &_visible {
+        visibility: visible; 
+        opacity: 1;
+    }
+
+}
+

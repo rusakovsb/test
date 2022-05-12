@@ -1,0 +1,40 @@
+.input {
+    position: relative;
+
+    &__label {
+        position: absolute;
+        top: 0.75rem;
+        left: 0.75rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #272733;
+        transition: 0.2s linear;
+
+        &_small {
+            top: -1.5rem;
+            left: 0;
+            font-size: 0.875rem;
+            color: #fff;            
+        }
+    }
+
+    &__control {      
+        width: 100%;
+        padding: 0 0.75rem;
+        box-sizing: border-box;
+        background: #dfdfe0;
+        color: #272733;
+        border: none;
+        border-radius: 0.188rem;
+        font-family: 'Lato';
+        font-size: 1.125rem;
+        line-height: 3rem;
+        transition: 0.2s linear;
+
+        &:focus {
+            background: #fff;
+            outline: none;
+        }        
+    }
+
+}

@@ -1,0 +1,100 @@
+.hero {
+    padding: 10.417vw 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &__image {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url("blocks/hero/img/hero-bg.jpg") top right / cover no-repeat;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        width: 100%; 
+
+        @include sm { 
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+    }
+
+    &__title {
+        margin: 0 0 3.646vw 0;
+        font-size: calc(1rem + 1.667vw);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__title-span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(5vw);
+        will-change: transform;
+
+        &_blue {
+            color: #3e9cdc;
+        }
+
+        &_black {
+            color: #000;
+        }
+
+    }
+
+    &__inner {
+        opacity: 0;
+    }
+
+    &__subtitle {
+        margin: 0 0 0.5em 0;
+        font-size: calc(1rem + 0.208vw);
+        font-weight: 700;  
+        
+        @include sm { 
+            font-size: 1.125rem;
+        }
+
+    }
+
+    &__list {
+        margin: 0 0 3.646vw 0;
+        padding: 0 0 0 0.5em;
+        list-style: none;
+        font-size: calc(1rem + 0.208vw);
+
+        @include md { 
+            font-size: 1rem;
+        }
+
+    }
+
+    &__list-item {
+        margin: 0 0 0.25em 0;
+
+        &::before {
+            content: "-";
+            display: inline-block;
+            margin: 0 0.5em 0 0;
+        }
+    }
+
+    &__actions {
+        display: flex;
+    }
+
+    @include sm { 
+        display: block;
+        padding: 70vw 0 0 0;
+    }
+
+}

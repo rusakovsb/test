@@ -1,0 +1,32 @@
+.header {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+    padding: 2.083vw 0;
+	background: rgba(16, 16, 29, 0.9);
+    transition: padding 0.2s linear;
+    will-change: bottom;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+    }
+
+    &_small {
+        padding: 1.25vw 0;
+
+        @include sm { 
+            padding: 1rem 0;
+        }
+        
+    }
+
+    @include sm { 
+        padding: 1rem 0;
+        overflow: hidden;
+    }
+
+}

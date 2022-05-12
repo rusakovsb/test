@@ -1,0 +1,18 @@
+.mobile-nav {
+    position: fixed;
+	z-index: 102;
+	top: 0;
+	right: 0;
+	width: 85%;
+	height: 100%;
+	padding: 2rem;	
+	overflow-y: auto;
+	background: rgba(16, 16, 29, 0.9);
+	transform: translate3d(100%, 0, 0); 
+    will-change: transform; 
+
+    &__close {
+        display: block;
+    }
+    
+}

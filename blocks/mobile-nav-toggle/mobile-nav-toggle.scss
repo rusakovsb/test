@@ -1,0 +1,68 @@
+.mobile-nav-toggle {
+    display: none;
+	width: 2rem;
+	height: 1.25rem;
+	border: none;
+	position: relative;	
+    z-index: 2;
+	background: transparent;
+	-webkit-tap-highlight-color: transparent;
+
+    &__line {
+        width: 100%;
+        height: 0.125rem;
+        position: absolute;
+        border-radius: 0.125rem;
+        background: #fff;
+        transition: 0.2s linear;
+
+
+        &_first {
+            left: 0;
+            top: 0;
+            transform: rotate(0deg);
+        }
+
+        &_second {
+            left: 0;
+            top: 50%;
+            margin: -0.063rem 0 0 0;
+            opacity: 1;
+        }
+
+        &_third {
+            left: 0;
+            bottom: 0;
+            transform: rotate(0deg);
+        }
+
+    }
+
+    &_active &__line_first {
+        left: 0;
+        top: 50%;  
+        margin: -0.063rem 0 0 0;
+        transform: rotate(-45deg);
+    }
+    
+    &_active &__line_second {
+        left: 0;
+        bottom: 50%; 
+        margin: 0 0 -0.063rem 0; 
+        transform: rotate(45deg);
+        opacity: 0;   
+    }
+    
+    &_active &__line_third {
+        left: 0;
+        bottom: 50%; 
+        margin: 0 0 -0.063rem 0; 
+        transform: rotate(45deg);
+    }
+
+    @include sm { 
+        display: block;
+    }
+
+}
+

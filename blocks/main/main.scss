@@ -1,0 +1,20 @@
+.main {
+    padding: 6.25rem 0;
+    background: #272733 url("blocks/main/img/main-bg.png") top center / cover no-repeat;
+
+    &__subtitle {
+        margin: 0;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #bbb;
+    }
+
+    @include sm { 
+        padding: 5rem 0;
+    }
+    
+}
+
+
+

@@ -1,0 +1,19 @@
+.logo {
+    width: 12.76vw;
+    transition: 0.2s linear;
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &_small {
+        width: 10.417vw;
+    }
+
+    @include md { 
+        width: 8.125rem;
+    }
+
+}
